@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_button_height"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/layout_marginBottom">
+
+        <ImageButton
+            android:id="@+id/btn_takepicture"
+            android:layout_width="@dimen/medium_button_width"
+            android:layout_height="@dimen/medium_button_height"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
+            android:scaleType="fitXY"
+            android:src="@drawable/takepicture"
+            android:background="#00000000"/>
+
+        <ImageButton
+            android:id="@+id/btn_view"
+            android:layout_width="@dimen/medium_button_width"
+            android:layout_height="@dimen/medium_button_height"
+            android:layout_marginLeft="@dimen/button_distance"
+            android:scaleType="fitXY"
+            android:src="@drawable/view"
+            android:background="#00000000"/>
+
+        <ImageButton
+            android:id="@+id/btn_database"
+            android:layout_width="@dimen/medium_button_width"
+            android:layout_height="@dimen/medium_button_height"
+            android:layout_marginLeft="@dimen/button_distance"
+            android:scaleType="fitXY"
+            android:src="@drawable/database"
+            android:background="#00000000"/>
+    </LinearLayout>
+</FrameLayout>

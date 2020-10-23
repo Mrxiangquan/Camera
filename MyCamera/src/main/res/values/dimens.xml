@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_marginBottom">70dp</dimen>
+    <dimen name="layout_marginLeft">60dp</dimen>
+    <dimen name="layout_marginRight">80dp</dimen>
+    <dimen name="medium_button_width">70dp</dimen>
+    <dimen name="medium_button_height">70dp</dimen>
+    <dimen name="small_button_width">40dp</dimen>
+    <dimen name="small_button_height">40dp</dimen>
+    <dimen name="button_distance">20dp</dimen>
+</resources>

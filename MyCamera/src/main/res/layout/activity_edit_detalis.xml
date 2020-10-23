@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="23dp"
+    android:paddingTop="50dp">
+    <GridLayout
+        android:id="@+id/edit_ed_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:columnCount="2"
+        android:rowCount="5">
+        <TextView
+            android:id="@+id/text_ed_name"
+            android:text="文件名称："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0" />
+        <EditText
+            android:id="@+id/edit_ed_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <TextView
+            android:id="@+id/text_ed_type"
+            android:text="文件种类："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0" />
+        <EditText
+            android:id="@+id/edit_ed_type"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/text_ed_size"
+            android:text="文件大小："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0" />
+        <EditText
+            android:id="@+id/edit_ed_size"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"/>
+
+
+        <TextView
+            android:id="@+id/text_ed_changeTime"
+            android:text="修改时间："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0" />
+        <EditText
+            android:id="@+id/edit_ed_changeTime"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"/>
+
+        <TextView
+            android:id="@+id/text_ed_path"
+            android:text="文件路径："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"/>
+        <EditText
+            android:id="@+id/edit_ed_path"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_ed_add"
+        android:text="添加"
+        android:layout_width="@dimen/medium_button_height"
+        android:layout_height="@dimen/medium_button_height"
+        android:layout_below="@+id/edit_ed_gridlayout"/>
+
+    <Button
+        android:id="@+id/btn_ed_delete"
+        android:text="删除"
+        android:layout_width="@dimen/medium_button_height"
+        android:layout_height="@dimen/medium_button_height"
+        android:layout_below="@+id/edit_ed_gridlayout"
+        android:layout_marginLeft="@dimen/button_distance"
+        android:layout_toRightOf="@+id/btn_ed_add"/>
+
+    <Button
+        android:id="@+id/btn_ed_back"
+        android:text="返回"
+        android:layout_width="@dimen/medium_button_height"
+        android:layout_height="@dimen/medium_button_height"
+        android:layout_below="@+id/edit_ed_gridlayout"
+        android:layout_marginLeft="@dimen/button_distance"
+        android:layout_toRightOf="@id/btn_ed_delete"/>
+
+</RelativeLayout>

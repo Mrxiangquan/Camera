@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewFrameLayout"
+    android:background="#FF000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewPicture">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/small_button_width"
+        android:layout_height="@dimen/small_button_width"
+        android:src="@drawable/back"
+        android:background="#FF000000"
+        android:scaleType="fitXY"
+        android:layout_gravity="left"/>
+
+    <ImageButton
+        android:id="@+id/btn_detail"
+        android:layout_width="@dimen/small_button_width"
+        android:layout_height="@dimen/small_button_width"
+        android:src="@drawable/detail"
+        android:background="#FF000000"
+        android:scaleType="fitXY"
+        android:layout_gravity="right"/>
+
+    <ImageSwitcher
+        android:id="@+id/imageswitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FF000000">
+
+    </ImageSwitcher>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <!--图片操作控件组-->
+        <LinearLayout
+            android:id="@+id/line_image_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/line_image_process">
+            <ImageButton
+                android:id="@+id/btn_share_image"
+                android:layout_width="@dimen/small_button_width"
+                android:layout_height="@dimen/small_button_height"
+                android:src="@drawable/share"
+                android:background="#00000000"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/btn_delete_picture"
+                android:layout_width="@dimen/small_button_width"
+                android:layout_height="@dimen/small_button_height"
+                android:src="@drawable/deletepicture"
+                android:background="#00000000"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/btn_rename"
+                android:layout_width="@dimen/small_button_width"
+                android:layout_height="@dimen/small_button_height"
+                android:src="@drawable/rename"
+                android:background="#00000000"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/btn_process"
+                android:layout_width="@dimen/small_button_width"
+                android:layout_height="@dimen/small_button_height"
+                android:src="@drawable/process"
+                android:background="#00000000"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <!--图像处理控件组-->
+        <LinearLayout
+            android:id="@+id/line_image_process"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/view_btn_togray"
+                android:layout_width="@dimen/small_button_width"
+                android:layout_height="@dimen/small_button_height"
+                android:src="@drawable/gray"
+                android:background="#00000000"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/view_btn_addnoise"
+                android:layout_width="@dimen/small_button_width"
+                android:layout_height="@dimen/small_button_height"
+                android:src="@drawable/noise"
+                android:background="#00000000"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/view_btn_turngray"
+                android:layout_width="@dimen/small_button_width"
+                android:layout_height="@dimen/small_button_height"
+                android:src="@drawable/turngray"
+                android:background="#00000000"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/view_btn_average"
+                android:layout_width="@dimen/small_button_width"
+                android:layout_height="@dimen/small_button_height"
+                android:src="@drawable/average"
+                android:background="#00000000"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/view_btn_median"
+                android:layout_width="@dimen/small_button_width"
+                android:layout_height="@dimen/small_button_height"
+                android:src="@drawable/median"
+                android:background="#00000000"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>
